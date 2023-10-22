@@ -493,7 +493,7 @@ func serveWebSocket(ginServer *gin.Engine) {
 		if util.ReadOnly && !command.IsRead() {
 			result := util.NewResult()
 			result.Code = -1
-			//result.Msg = model.Conf.Language(34)
+			result.Msg = model.Conf.Language(34)
 			s.Write(result.Bytes())
 			return
 		}
