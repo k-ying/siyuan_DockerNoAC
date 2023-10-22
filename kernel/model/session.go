@@ -151,7 +151,7 @@ func CheckReadonly(c *gin.Context) {
 		result.Msg = Conf.Language(34)
 		result.Data = map[string]interface{}{"closeTimeout": 5000}
 		//c.JSON(200, result)
-		//c.Abort()
+		c.Abort()
 		return
 	}
 }
