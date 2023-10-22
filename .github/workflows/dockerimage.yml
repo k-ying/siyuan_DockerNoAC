@@ -46,4 +46,4 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker buildx build --push --platform linux/amd64 -t 6kying9/siyuan:latest -t 6kying9/siyuan:v2.10.111 .
+          docker buildx build --push --platform linux/amd64 -t 6kying9/siyuan:latest -t 6kying9/siyuan:v2.10.112 .
