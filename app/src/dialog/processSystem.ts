@@ -368,7 +368,7 @@ export const setTitle = (title: string) => {
     const dragElement = document.getElementById("drag");
     const workspaceName = getWorkspaceName();
     if (title === window.siyuan.languages.siyuanNote) {
-        const versionTitle = `${workspaceName} - ${window.siyuan.languages.siyuanNote} v${Constants.SIYUAN_VERSION}`;
+        const versionTitle = `${workspaceName}`;
         document.title = versionTitle;
         if (dragElement) {
             dragElement.textContent = versionTitle;
@@ -376,7 +376,7 @@ export const setTitle = (title: string) => {
         }
     } else {
         title = title || "Untitled";
-        document.title = `${title} - ${workspaceName} - ${window.siyuan.languages.siyuanNote} v${Constants.SIYUAN_VERSION}`;
+        document.title = `${title} - ${workspaceName}`;
         if (!dragElement) {
             return;
         }
